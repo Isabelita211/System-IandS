@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Proveedores</class>
+ <widget class="QMainWindow" name="Proveedores">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1371</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/Fondo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddProv">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>620</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Añadir</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="EmailEmpre">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>240</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Rif">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>90</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="EmailEmp">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>240</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Email Empresa</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TlfnoVende">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>340</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RifProv">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>90</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rif Proveedor</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Limpiar">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>620</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Limpiar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NomEmp">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>140</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre Empresa</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>620</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Empresa">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>140</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NomVen">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>290</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre Vendedor</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TlfnoEmp">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>190</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tlfno Empresa</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>30</y>
+      <width>131</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/photo_5089217924715097417_y.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TlfnoVen">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>340</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tlfno Vendedor</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TlfnoEmpre">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>190</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>821</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(0,0,0);
+border-radius: 10px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="NameVen">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>290</y>
+      <width>351</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>AddProv</zorder>
+   <zorder>Limpiar</zorder>
+   <zorder>Exit</zorder>
+   <zorder>Logo</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>Rif</zorder>
+   <zorder>Empresa</zorder>
+   <zorder>NomVen</zorder>
+   <zorder>EmailEmp</zorder>
+   <zorder>EmailEmpre</zorder>
+   <zorder>NomEmp</zorder>
+   <zorder>TlfnoEmp</zorder>
+   <zorder>TlfnoEmpre</zorder>
+   <zorder>RifProv</zorder>
+   <zorder>TlfnoVen</zorder>
+   <zorder>NameVen</zorder>
+   <zorder>TlfnoVende</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

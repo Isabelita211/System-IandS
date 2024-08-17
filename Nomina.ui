@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Nomina</class>
+ <widget class="QMainWindow" name="Nomina">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1371</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/Fondo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>0</y>
+      <width>121</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/photo_5089217924715097417_y.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddEmpl">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Añadir Empleado</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit">
+    <property name="geometry">
+     <rect>
+      <x>1210</x>
+      <y>620</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Download">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>620</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Descargar</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>55</x>
+      <y>111</y>
+      <width>1241</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableView{
+	border: 4px solid rgb(0,0,0);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+}</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Fecha Nómina</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Nombre Empleado</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>CI</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cargo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Salario Base</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Periodo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Días Trabajados</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Salario</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Días Descanso</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Descanso</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Días Feriados</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Feriados</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Días Domingos</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Domingos</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Libres Trabajados</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Libres</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Horas Diurnas</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Extra Diurnas</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Horas Nocturnas</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Extra Nocturnas</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Bono Nocturno</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Bono</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Días Reposo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Reposo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Devengado</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total Devengado</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>SSO</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>RPE</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>FAOV</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ISRL</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Monto CT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Días CT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total CT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total Deducciones</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>TotalSalarioCT</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Descuento</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Consumo</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Faltante</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total a Pagar</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="Datos">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>50</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Datos Nomina</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

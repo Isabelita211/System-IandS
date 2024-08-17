@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddEditProduct</class>
+ <widget class="QMainWindow" name="AddEditProduct">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1371</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/Fondo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="IVAno">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>460</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>No</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Cantidad">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>390</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cantidad</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>30</y>
+      <width>821</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(0,0,0);
+border-radius: 10px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="PrecioUnid">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>520</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="PrecioIVA">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>470</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="Search">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>60</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Num1">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>390</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PrecioIva">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>500</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Precio IVA</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="IVA">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>450</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>8%</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>12%</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>16%</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>30%</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLineEdit" name="Proveedor">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>170</y>
+      <width>341</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NumFact">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>270</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Número Factura</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Unidad">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>390</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Kilos</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Unid</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Galon</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Litros</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Paquete</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tobos</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>30</y>
+      <width>131</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/photo_5089217924715097417_y.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Limpiar">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>620</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Limpiar</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="FechaVenci">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>220</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Exit">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>620</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Salir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FechaFact_2">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>220</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vencimiento Factura</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="FechaFact">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>220</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fecha de Factura</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SearchRif">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>120</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="PrecioTT">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>450</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NumControl">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>270</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Número Control</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Rif">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>120</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="Deposito">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>120</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="Precio">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>450</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Precio Total $</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="NombreProd">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>330</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Control">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>270</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NombreProduct">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>330</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre Producto</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="CodigoProduct">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>170</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Codigo del Producto</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Ubicacion">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>120</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Depositado en:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="CodeProduct">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>170</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="FechaFactu">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>220</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NombrProv">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>170</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Proveedor</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddProd">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>620</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Añadir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="iva">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>450</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IVA</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="PrecioUni">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>550</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Precio Unit $</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Factura">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>270</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="NumRif">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>120</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rif</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="IVAsi">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>460</y>
+      <width>51</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Si</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="AddProv">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>120</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Añadir</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="BuscarProd">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>60</y>
+      <width>681</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 20px;
+	background-color: rgb(255, 255, 255);
+	padding-right: 10px;
+	padding-left:10px;
+}</string>
+    </property>
+    <property name="placeholderText">
+     <string>Buscar Producto</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>Search</zorder>
+   <zorder>Num1</zorder>
+   <zorder>PrecioIva</zorder>
+   <zorder>IVA</zorder>
+   <zorder>Proveedor</zorder>
+   <zorder>NumFact</zorder>
+   <zorder>Unidad</zorder>
+   <zorder>Logo</zorder>
+   <zorder>Limpiar</zorder>
+   <zorder>FechaVenci</zorder>
+   <zorder>Exit</zorder>
+   <zorder>FechaFact_2</zorder>
+   <zorder>FechaFact</zorder>
+   <zorder>SearchRif</zorder>
+   <zorder>PrecioTT</zorder>
+   <zorder>NumControl</zorder>
+   <zorder>Rif</zorder>
+   <zorder>Deposito</zorder>
+   <zorder>Precio</zorder>
+   <zorder>NombreProd</zorder>
+   <zorder>Control</zorder>
+   <zorder>NombreProduct</zorder>
+   <zorder>CodigoProduct</zorder>
+   <zorder>Ubicacion</zorder>
+   <zorder>CodeProduct</zorder>
+   <zorder>FechaFactu</zorder>
+   <zorder>NombrProv</zorder>
+   <zorder>AddProd</zorder>
+   <zorder>iva</zorder>
+   <zorder>PrecioUni</zorder>
+   <zorder>Factura</zorder>
+   <zorder>NumRif</zorder>
+   <zorder>IVAsi</zorder>
+   <zorder>AddProv</zorder>
+   <zorder>BuscarProd</zorder>
+   <zorder>IVAno</zorder>
+   <zorder>Cantidad</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,32 @@
+CREATE TABLE system_iands.usuarios(Nombre VARCHAR(15),Apellido VARCHAR(15), Cedula VARCHAR(15), Clave INT, PRIMARY KEY(Cedula)) ENGINE = InnoDB;
+
+CREATE TABLE system_iands.inventario(IdProducto INT AUTO_INCREMENT,Codigo VARCHAR(30),Rif VARCHAR(50) NOT NULL,NomEmpr VARCHAR(40) NOT NULL,NomProd VARCHAR(30),Inicial FLOAT,
+Deposito INT NOT NULL,Unidad VARCHAR(25) NOT NULL,PrecioTT FLOAT NOT NULL,IVA INT NOT NULL,PrecioUU FLOAT NOT NULL,FechaFact DATE,FechaVenci DATE,Ingreso FLOAT,
+TotalCantidad FLOAT,PrecioProm FLOAT,NumFact VARCHAR(30) NOT NULL,NumControl VARCHAR(30), PRIMARY KEY(IdProducto))ENGINE = InnoDB;
+
+CREATE TABLE system_iands.proveedores(Rif VARCHAR(15),NomEmpr VARCHAR(50),Tlfno VARCHAR(15),Email VARCHAR(50),NombreVen VARCHAR(30),TlfnoVen VARCHAR(15),PRIMARY KEY(Rif))ENGINE = InnoDB;
+
+CREATE TABLE system_iands.nomina(IdNomina INT AUTO_INCREMENT,FechaNomina DATE,NombreEmpl VARCHAR(30),Cedula VARCHAR(15),Cargo VARCHAR(50),SalarioBase INT NOT NULL,
+Periodo VARCHAR(100),DiasTrab INT NOT NULL,Salario FLOAT,Descanso INT NOT NULL,Des FLOAT,Feriados INT,Fer FLOAT,Domingos INT,Domin FLOAT,Libres INT,Lib FLOAT,HorasDiurnas INT,
+Hed FLOAT,HorasNocturnas INT,Hen FLOAT,BonoNoctu INT,BoN FLOAT,Reposo INT,Rep FLOAT,Devengado FLOAT NOT NULL,TotalDeveng FLOAT NOT NULL,SSO FLOAT,RPE FLOAT,FAOV FLOAT,ISLR FLOAT,
+MontoCT INT NOT NULL,DiasCT INT NOT NULL,TotalCT FLOAT NOT NULL,TotalDesc FLOAT,TotalSalarioCT FLOAT NOT NULL,Descuento INT,Faltante INT,Consumo Int,TotalPagar FLOAT NOT NULL,
+PRIMARY KEY(IdNomina))ENGINE = InnoDB;
+
+CREATE TABLE system_iands.empleados(PrimerNombre VARCHAR(30) NOT NULL,SegunNombre VARCHAR(30) NOT NULL,PrimerApe VARCHAR(30) NOT NULL,
+SegunApe VARCHAR(30) NOT NULL, Cedula VARCHAR(15) NOT NULL, Tlfno VARCHAR(15) NOT NULL, Cargo VARCHAR(50) NOT NULL,
+FechaIngre DATE NOT NULL, SalarioBase INT NOT NULL, PRIMARY KEY(Cedula)) ENGINE = InnoDB;
+
+CREATE TABLE system_iands.menu(Id INT AUTO_INCREMENT, Nombre VARCHAR(40) NOT NULL, Precio FLOAT,
+PRIMARY KEY(Id)) ENGINE = InnoDB;
+
+CREATE TABLE system_iands.venta(IdVenta INT AUTO_INCREMENT,Nombre VARCHAR(40) NOT NULL, Cantidad INT NOT NULL,
+Precio FLOAT,PRIMARY KEY(IdVenta))ENGINE = InnoDB;
+
+CREATE TABLE system_iands.facturacion(NumeroFactura INT AUTO_INCREMENT,Fecha DATE NOT NULL, Hora TIME NOT NULL,
+Nombre VARCHAR(40) NOT NULL, Cantidad INT NOT NULL,Precio FLOAT NOT NULL, Caja VARCHAR(10),
+PRIMARY KEY(NumeroFactura))ENGINE = InnoDB;
+
+CREATE TABLE system_iands.metodopago(Id INT AUTO_INCREMENT,Nombre VARCHAR(40) NOT NULL,Monto FLOAT NOT NULL,NoReferencia VARCHAR(40),PRIMARY KEY(Id))ENGINE = InnoDB;
+
+CREATE TABLE system_iands.auditoria(IDProducto INT AUTO_INCREMENT,NombreProducto VARCHAR(30) NOT NULL,CantidadInventario FLOAT NOT NULL,CantidadVenta FLOAT NOT NULL,
+PrecioUnitCompra FLOAT NOT NULL,Existencia FLOAT NOT NULL,PRIMARY KEY(IDProducto))ENGINE = InnoDB;

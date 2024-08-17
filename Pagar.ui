@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormaPago</class>
+ <widget class="QMainWindow" name="FormaPago">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 87 12pt &quot;Arial Black&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1371</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/Fondo.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>291</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(0,0,0);
+border-radius: 10px</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Bs Efectivo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tarjeta de Debito</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tarjeta de Credito</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pago Movil</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Biopago</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Divisa</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="MontoBS">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>80</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Monto a Pagar Bs</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="BS">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>70</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MontoD">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>80</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Monto a Pagar $</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Divisa">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>70</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MontoCliente">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>250</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Monto</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Monto">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>240</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MetodoPago">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>170</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Metodo de Pago</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="FormaPa">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>160</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Vuelto">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>240</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="DarVuelto">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>250</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vuelto</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>370</y>
+      <width>811</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(0,0,0);
+border-radius: 10px;</string>
+    </property>
+    <column>
+     <property name="text">
+      <string>Metodo de Pago</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Cantidad</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Referencia</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>40</y>
+      <width>811</width>
+      <height>321</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(0,0,0);
+border-radius: 20px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Totalizar">
+    <property name="geometry">
+     <rect>
+      <x>1160</x>
+      <y>630</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Totalizar pago</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Registrar">
+    <property name="geometry">
+     <rect>
+      <x>940</x>
+      <y>300</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(170, 170, 255);
+	border: 2px solid rgb(0,0,0);
+	border-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Registrar pago</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>40</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Imagenes/photo_5089217924715097417_y.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="RefePM">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>300</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ReferenciaPM">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>310</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Referencia Pago Movil</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="IGTF">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>120</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IGTF</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="igtf">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>110</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="TotalD">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>160</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Total Dolares</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="TotalPagar">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>150</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 72, 106);
+	border-radius: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+}</string>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>frame</zorder>
+   <zorder>FormaPa</zorder>
+   <zorder>Monto</zorder>
+   <zorder>DarVuelto</zorder>
+   <zorder>MontoCliente</zorder>
+   <zorder>BS</zorder>
+   <zorder>MontoBS</zorder>
+   <zorder>Divisa</zorder>
+   <zorder>MontoD</zorder>
+   <zorder>MetodoPago</zorder>
+   <zorder>Vuelto</zorder>
+   <zorder>Totalizar</zorder>
+   <zorder>Registrar</zorder>
+   <zorder>Logo</zorder>
+   <zorder>RefePM</zorder>
+   <zorder>ReferenciaPM</zorder>
+   <zorder>IGTF</zorder>
+   <zorder>igtf</zorder>
+   <zorder>TotalD</zorder>
+   <zorder>TotalPagar</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
